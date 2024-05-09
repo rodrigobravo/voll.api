@@ -18,6 +18,7 @@ public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Boolean ativo;
     private String nome;
     private String email;
     private String telefone;
@@ -28,6 +29,7 @@ public class Paciente {
 
     public Paciente(DadosCadastroPaciente cadastro){
 
+        this.ativo = true;
         this.nome = cadastro.nome();
         this.email = cadastro.email();
         this.telefone = cadastro.telefone();
