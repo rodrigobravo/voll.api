@@ -1,7 +1,5 @@
 package med.voll.api.paciente;
 
-import med.voll.api.controller.paciente.Paciente;
-
 public record DadosListagemPaciente(Long id, String nome, String email, String cpf) {
 
     public DadosListagemPaciente(Paciente paciente){
